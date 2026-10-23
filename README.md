@@ -53,15 +53,46 @@ The bot is deployed on [Railway](https://railway.app/) and connected to this Git
 
 ## Commands
 
-<!-- Add your command list here, e.g. -->
-| Command | Description |
-|---------|-------------|
-| `!command` | Description of what it does |
+!set_channel
+
+    Description: Sets the current text channel as the designated study-tracking channel where the bot will send its daily pings and updates.
+
+!start_tracking
+
+    Description: Starts or restarts the background task that sends out the daily study-hours prompt at the configured time.
+
+!stop_tracking
+
+    Description: Stops the automated daily ping background task.
+
+!clear_all
+
+    Description: Permanently deletes all records from both the daily study spreadsheet and the monthly leaderboard (requires an interactive confirmation reaction).
+
+!clear_daily
+
+    Description: Deletes only the daily study entries while keeping the monthly leaderboard files intact (requires confirmation).
+
+!clear_monthly
+
+    Description: Deletes only the monthly leaderboard summaries while keeping daily study entries intact (requires confirmation).
+
+!delete_user <@member>
+
+    Description: Permanently removes all daily entries and monthly records belonging to a specific mentioned user (requires confirmation).
+
+!alltime_summary
+
+    Description: Calculates and displays a ranked all-time leaderboard showing total study hours accumulated by every participant across all dates.
+
+!month_summary
+
+    Description: Generates, saves, and displays the monthly leaderboard standings for the current month.
+
+!debug_csv
+
+    Description: Displays a raw text preview of the contents inside the daily study CSV data file for troubleshooting.
 
 ## Contributing
 
-Issues and pull requests are welcome.
 
-## License
-
-<!-- Add a license, e.g. MIT -->
